@@ -57,7 +57,7 @@
 /* Hover effect */
 .playing-card:hover {
   transform: scale(1.125);         /* 20% bigger */
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5); /* stronger shadow */
+  box-shadow: 0 12px 45px rgba(0,0,0,1.3); /* stronger shadow */
 }
 
 .corner, .center-suit {
