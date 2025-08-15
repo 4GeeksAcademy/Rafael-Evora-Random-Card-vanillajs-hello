@@ -1,0 +1,73 @@
+.everything {
+    display: flex;
+    align-items: center;          
+    justify-content: center;      
+    height: 100vh;      
+    margin: 0;
+
+    /* Base color */
+    background-color: rgb(115, 203, 115);    
+
+    /* Layered textures */
+    background-image: 
+        url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+        url('https://www.transparenttextures.com/patterns/crissX-cross.png'); 
+
+    background-repeat: repeat, repeat;     
+    background-size: auto, auto;  
+}
+
+.playing-card {
+  width: 20rem;                  /* base size */
+  height: 28rem;
+  position: relative;
+  border: 4px solid #000;
+  border-radius: 1.6rem;
+  background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
+  background-color: white;
+  background-repeat: repeat;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+  /* Smooth transition for scaling */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.playing-card:hover {
+  transform: scale(1.125);         /* 20% bigger */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5); /* stronger shadow */
+}
+
+.corner, .center-suit {
+  font-size: 3rem; /* adjust as needed */
+  position: absolute;
+  text-align: center;
+
+  /* Texture for text */
+  background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.85); /* 85% opacity */
+  /* Optional: smooth appearance */
+  color: black; /* fallback if texture fails */
+}
+
+
+.top-left {
+  top: 1rem;                     /* scaled spacing */
+  left: 1rem;
+}
+
+.bottom-right {
+  bottom: 1rem;
+  right: 1rem;
+  transform: rotate(180deg);
+}
+
+.center-suit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;               /* doubled from 3rem */
+}
