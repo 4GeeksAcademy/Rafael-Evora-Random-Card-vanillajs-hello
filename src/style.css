@@ -69,7 +69,7 @@
   background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
   background-repeat: repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0.85); /* 85% opacity */
+  -webkit-text-fill-color: 85% opacity;
   /* Optional: smooth appearance */
   color: black; /* fallback if texture fails */
 }
